@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pirate Seas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hud">
+  <div class="hud-title">🏴‍☠️ PIRATE SEAS</div>
+  <div>💰 Gold: <span id="money">0</span></div>
+  <div>🚢 Ship: <span id="shipName">Raft</span></div>
+  <div>❤️ Health: <span id="health">100</span></div>
+  <div>💀 Ships sunk: <span id="kills">0</span></div>
+</div>
+
+<div id="shop" class="hidden">
+  <h2>🏝️ PIRATE SHIPYARD</h2>
+  <p>Spend your gold on a stronger ship!</p>
+  <div id="shopItems"></div>
+  <button onclick="closeShop()">Leave Shop</button>
+</div>
+
+<div id="message"></div>
+
+<canvas id="game"></canvas>
+
+<div id="controls">
+  WASD: Sail | Mouse: Aim | Click: Fire | E: Shop
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
